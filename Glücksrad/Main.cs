@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -59,7 +60,7 @@ namespace Glücksrad
             else if (einträge.Contains(txtAddRemove.Text))
                 einträge.Remove(txtAddRemove.Text);
             else
-                einträge.Add(txtAddRemove.Text);
+                einträge.Insert(new Random(DateTime.Now.Ticks.GetHashCode()).Next(0, einträge.Count), txtAddRemove.Text);
 
             if (einträge.Count == 0)
             {
@@ -67,6 +68,20 @@ namespace Glücksrad
                 einträge = new List<string> { "800", "200", "500", "Bankrott", "1000", "Extradreh", "50", "600" };
             }
             RefreshList();
+        }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            int indexVoher = index;
+            for (int i = new Random(DateTime.Now.Ticks.GetHashCode()).Next(10, 250); i > 0; i--)
+            {
+                index++;
+                RefreshList();
+            }
+            while (indexVoher == index)
+            {
+                btnRandom_Click(null, null);
+            }
         }
     }
 }
