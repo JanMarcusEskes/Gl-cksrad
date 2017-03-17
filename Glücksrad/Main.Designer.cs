@@ -80,6 +80,7 @@
       // wert4
       // 
       this.wert4.AutoSize = true;
+      this.wert4.ForeColor = System.Drawing.Color.Gray;
       this.wert4.Location = new System.Drawing.Point(6, 117);
       this.wert4.Name = "wert4";
       this.wert4.Size = new System.Drawing.Size(36, 13);
@@ -89,6 +90,7 @@
       // wert3
       // 
       this.wert3.AutoSize = true;
+      this.wert3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
       this.wert3.Location = new System.Drawing.Point(6, 91);
       this.wert3.Name = "wert3";
       this.wert3.Size = new System.Drawing.Size(36, 13);
@@ -107,6 +109,7 @@
       // wert1
       // 
       this.wert1.AutoSize = true;
+      this.wert1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
       this.wert1.Location = new System.Drawing.Point(6, 41);
       this.wert1.Name = "wert1";
       this.wert1.Size = new System.Drawing.Size(36, 13);
@@ -116,6 +119,7 @@
       // wert0
       // 
       this.wert0.AutoSize = true;
+      this.wert0.ForeColor = System.Drawing.Color.Gray;
       this.wert0.Location = new System.Drawing.Point(6, 16);
       this.wert0.Name = "wert0";
       this.wert0.Size = new System.Drawing.Size(36, 13);
