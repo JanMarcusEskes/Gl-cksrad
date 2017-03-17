@@ -46,7 +46,7 @@ namespace Glücksrad
 
     private void button1_Click(object sender, EventArgs e)
     {
-      if (txtAddRemove.Text == String.Empty)
+      if (txtAddRemove.Text == string.Empty)
       {
         MessageBox.Show("Sie haben nichts einegegeben!\nBitte geben Sie einen Wert ein!", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
       }
@@ -65,19 +65,16 @@ namespace Glücksrad
 
     private void btnRandom_Click(object sender, EventArgs e)
     {
-      int indexVoher = index;
+      btnRandom.Enabled = false;
       for (int i = new Random(DateTime.Now.Ticks.GetHashCode()).Next(10, 100); i > 0; i--)
       {
         index++;
         RefreshList();
-        Thread.Sleep(100);
-        this.Refresh();
-        this.Invalidate();
+        Thread.Sleep(500/i);
+        Refresh();
+        Invalidate();
       }
-      while (indexVoher == index)
-      {
-        btnRandom_Click(null, null);
-      }
+      btnRandom.Enabled = true;
     }
   }
 }
