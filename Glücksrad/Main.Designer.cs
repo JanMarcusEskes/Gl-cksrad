@@ -100,9 +100,10 @@
       // wert2
       // 
       this.wert2.AutoSize = true;
+      this.wert2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.wert2.Location = new System.Drawing.Point(6, 67);
       this.wert2.Name = "wert2";
-      this.wert2.Size = new System.Drawing.Size(36, 13);
+      this.wert2.Size = new System.Drawing.Size(41, 13);
       this.wert2.TabIndex = 2;
       this.wert2.Text = "Wert2";
       // 
