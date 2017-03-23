@@ -153,7 +153,7 @@
       this.btnAddRemove.TabIndex = 7;
       this.btnAddRemove.Text = "Wert hinzufügen/entfernen";
       this.btnAddRemove.UseVisualStyleBackColor = true;
-      this.btnAddRemove.Click += new System.EventHandler(this.button1_Click);
+      this.btnAddRemove.Click += new System.EventHandler(this.btnAddRemoveValue_Click);
       // 
       // txtAddRemove
       // 

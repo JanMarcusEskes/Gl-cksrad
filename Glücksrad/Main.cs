@@ -44,7 +44,7 @@ namespace Glücksrad
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAddRemoveValue_Click(object sender, EventArgs e)
         {
             if (txtAddRemove.Text == string.Empty)
             {
